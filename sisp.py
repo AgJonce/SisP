@@ -913,7 +913,7 @@ def main():
     # Menu principal com a opção "Jonce", "Gestão de Compras Públicas", "Sistema de Problemas Urbanos"
     sistema = st.sidebar.selectbox("Escolha um Sistema:", ["Analise de Erros"])
 
-    elif sistema == "Analise de Erros":
+    if sistema == "Analise de Erros":
         opcao_erro = st.sidebar.radio("Escolha uma ação:",["Analisador de Mensagens de Erro", "Gerenciar Tipo de Arquivo"])
         if opcao_erro =="Analisador de Mensagens de Erro":
             if 'tipo_arquivo' not in st.session_state:
